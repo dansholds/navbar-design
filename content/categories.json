@@ -1,0 +1,86 @@
+{
+  "styles": [
+    {
+      "slug": "3d",
+      "title": "3D",
+      "description": "3D navbars are rare but they do exist!"
+    },
+    {
+      "slug": "animated",
+      "title": "Animated",
+      "description": "Static navbars too boring for you? Try these out for size."
+    },
+    {
+      "slug": "grid",
+      "title": "Grid",
+      "description": "Can we grid it? yes we can."
+    },
+    {
+      "slug": "illustrated",
+      "title": "Illustrated",
+      "description": "These navbars have embraced humanity and have been created with the love by illustrators."
+    },
+    {
+      "slug": "loud",
+      "title": "Loud",
+      "description": "In your face navbars that fight for their right to be seen."
+    },
+    {
+      "slug": "minimalism",
+      "title": "Minimalism",
+      "description": "Clean, simple, and focused compositions with negative space."
+    },
+    {
+      "slug": "monochromatic",
+      "title": "Monochromatic",
+      "description": "Sometimes light and dark is all you need."
+    },
+    {
+      "slug": "retro",
+      "title": "Retro",
+      "description": "These navbars take their inspiration from the internet of the old, or maybe some form of TUI/GUI, either way we've put them all here!"
+    },
+    {
+      "slug": "typographic",
+      "title": "Typographic",
+      "description": "These navbars do away with fancy layouts and illustrations and instead focus on what matters; words."
+    }
+  ],
+  "types": [
+    {
+      "slug": "dropdown",
+      "title": "Dropdown",
+      "description": "They're not quite mega and they're not quite...normal."
+    },
+    {
+      "slug": "full-screen",
+      "title": "Full Screen",
+      "description": "Navbars that take center stage (and your entire screen)"
+    },
+    {
+      "slug": "mega",
+      "title": "Mega",
+      "description": "Mega in name, Mega in appearance."
+    },
+    {
+      "slug": "mobile",
+      "title": "Mobile",
+      "description": "Some Navbars are built specifically for mobile viewing, these are those."
+    },
+    {
+      "slug": "side-drawer",
+      "title": "Side Drawer",
+      "description": "Navbar at the top? No thanks."
+    },
+    {
+      "slug": "static",
+      "title": "Static",
+      "description": "Classic Navbars."
+    },
+    {
+      "slug": "sticky",
+      "title": "Sticky",
+      "description": "Sticky icky navbars that are always there when you need them."
+    }
+  ]
+}

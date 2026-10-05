@@ -1,0 +1,453 @@
+[
+  {
+    "slug": "letude",
+    "title": "L'Étude",
+    "description": "L'Étude ditches the usual top bar for a vertical navbar centred down the middle of the page, doubling as both navigation and a work filter. Unique, minimal and very confident.",
+    "website": "https://letude.group/work?ref=navbar.design",
+    "styles": [
+      "minimalism"
+    ],
+    "types": [
+      "side-drawer",
+      "static"
+    ],
+    "image": "/images/navbars/letude.png",
+    "imageWidth": 1600,
+    "imageHeight": 900,
+    "featured": false
+  },
+  {
+    "slug": "east-asian-graphics-archive",
+    "title": "East Asian Graphics Archive",
+    "description": "Founded in 2023, the East Asian Graphics Archive (EAGA) is an archive of contemporary graphic design made by creatives, studios, and brands from across East Asia and the diaspora.\n\nUsing community-based archival methods that challenge the Western notion of archive as institution, the EAGA aims to preserve the richness of East Asian visual cultures and heritages through curation. In doing so, the Archive strives to interrogate and celebrate the intertwined legacies of the region’s design landscapes, while cultivating a broader appreciation of trailblazing graphic, typographical, and artistic practices from across East Asia.",
+    "website": "https://eastasiangraphicsarchive.com?ref=navbar.design",
+    "styles": [
+      "minimalism"
+    ],
+    "types": [
+      "side-drawer",
+      "static"
+    ],
+    "image": "/images/navbars/east-asian-graphics-archive.png",
+    "imageWidth": 2652,
+    "imageHeight": 1748,
+    "featured": false
+  },
+  {
+    "slug": "paradigm-ai",
+    "title": "Paradigm AI",
+    "description": "Launch thousands of AI research agents in minutes",
+    "website": "https://paradigmai.com?ref=navbar.design",
+    "styles": [
+      "grid"
+    ],
+    "types": [
+      "mega",
+      "sticky"
+    ],
+    "image": "/images/navbars/paradigm-ai.png",
+    "imageWidth": 3424,
+    "imageHeight": 1734,
+    "featured": false
+  },
+  {
+    "slug": "stripe-dot-dev",
+    "title": "Stripe dot dev",
+    "description": "Stripe.dev had no reason to go this hard. The site itself is wild but the navbar mirroring a TUI menu is genius.",
+    "website": "https://stripe.dev",
+    "styles": [
+      "retro",
+      "minimalism"
+    ],
+    "types": [
+      "sticky"
+    ],
+    "image": "/images/navbars/stripe-dot-dev.png",
+    "imageWidth": 4526,
+    "imageHeight": 2142,
+    "featured": true
+  },
+  {
+    "slug": "anima",
+    "title": "Anima",
+    "description": "Anima co-found nature-inspired ventures to scale the ecological and economic impact of biomimicry.\n\nTheir entire website is a piece of art but their navbar is super unique!",
+    "website": "https://www.anima.ai?ref=navbar.design",
+    "styles": [
+      "animated",
+      "minimalism"
+    ],
+    "types": [
+      "static"
+    ],
+    "image": "/images/navbars/anima.png",
+    "imageWidth": 2966,
+    "imageHeight": 1994,
+    "featured": true
+  },
+  {
+    "slug": "cho-choi-creative",
+    "title": "Cho Choi Creative",
+    "description": "Founded in late 2020 in Vietnam, ChoChoi is a team of passionate storytellers. They deliver high-impact brand experiences through strategic branding, innovative design, and data-driven social media marketing.",
+    "website": "https://chochoicreative.com/?ref=navbar.design",
+    "styles": [
+      "animated",
+      "minimalism"
+    ],
+    "types": [
+      "static"
+    ],
+    "image": "/images/navbars/cho-choi-creative.png",
+    "imageWidth": 1920,
+    "imageHeight": 1080,
+    "featured": false
+  },
+  {
+    "slug": "naked-city-films",
+    "title": "Naked City Films",
+    "description": "A New York director led, production company.Built forcollaboration and partnership.",
+    "website": "https://www.nakedcityfilms.com?ref=navbar.design",
+    "styles": [
+      "minimalism",
+      "monochromatic"
+    ],
+    "types": [
+      "sticky"
+    ],
+    "image": "/images/navbars/naked-city-films.png",
+    "imageWidth": 2254,
+    "imageHeight": 2000,
+    "featured": false
+  },
+  {
+    "slug": "adrien-lamy",
+    "title": "Adrien Lamy",
+    "description": "Adrien Lamy is a Creative Dev Mercenary Based in Paris (the french one).",
+    "website": "https://adrienlamy.fr?ref=navbar.design",
+    "styles": [
+      "illustrated",
+      "loud"
+    ],
+    "types": [
+      "side-drawer"
+    ],
+    "image": "/images/navbars/adrien-lamy.png",
+    "imageWidth": 1920,
+    "imageHeight": 1080,
+    "featured": false
+  },
+  {
+    "slug": "beehiiv",
+    "title": "Beehiiv",
+    "description": "The all-in-one platform that brings together newsletters, websites, and every growth tool you need to scale quickly and earn more.",
+    "website": "https://www.beehiiv.com?via=DanHoldsworth1",
+    "styles": [
+      "monochromatic",
+      "grid"
+    ],
+    "types": [
+      "mega",
+      "dropdown"
+    ],
+    "image": "/images/navbars/beehiiv.png",
+    "imageWidth": 1920,
+    "imageHeight": 1080,
+    "featured": false
+  },
+  {
+    "slug": "factory",
+    "title": "Factory",
+    "description": "A clean & minimal monotype navbar with a large dropdown.",
+    "website": "https://factory.ai?ref=navbar.design",
+    "styles": [],
+    "types": [
+      "sticky",
+      "dropdown"
+    ],
+    "image": "/images/navbars/factory.png",
+    "imageWidth": 1920,
+    "imageHeight": 1080,
+    "featured": false
+  },
+  {
+    "slug": "velvetyne",
+    "title": "Velvetyne",
+    "description": "They don't come straighter to the point than the Velvetyne navbar. The entire navigation is laid out in the upper 20% of the hero section, and then collaposes into a more minimal version when scrolling.",
+    "website": "https://velvetyne.fr?ref=navbar.design",
+    "styles": [
+      "minimalism",
+      "typographic"
+    ],
+    "types": [
+      "static",
+      "sticky"
+    ],
+    "image": "/images/navbars/velvetyne.png",
+    "imageWidth": 1920,
+    "imageHeight": 1080,
+    "featured": false
+  },
+  {
+    "slug": "fonts-ninja",
+    "title": "Fonts Ninja",
+    "description": "Fonts Ninja has a minimal sticky navbar by default but a super nice animated hidden navbar with some extra options!",
+    "website": "https://fonts.ninja?ref=navbar.design",
+    "styles": [
+      "animated"
+    ],
+    "types": [
+      "sticky"
+    ],
+    "image": "/images/navbars/fonts-ninja.png",
+    "imageWidth": 1920,
+    "imageHeight": 1080,
+    "featured": false
+  },
+  {
+    "slug": "anuc-home",
+    "title": "ANUC HOME",
+    "description": "ANUC's sticky navbar slides down the screen as you scroll as if locked onto some rails, as if it's confined to the grids that run throughout the website.",
+    "website": "https://www.anuchome.com?ref=navbar.design",
+    "styles": [
+      "minimalism",
+      "grid"
+    ],
+    "types": [
+      "sticky"
+    ],
+    "image": "/images/navbars/anuc-home.png",
+    "imageWidth": 1920,
+    "imageHeight": 1080,
+    "featured": false
+  },
+  {
+    "slug": "cain",
+    "title": "Cain",
+    "description": "Cain's navbar is a minimal one that hides a neat trick to it, it animates as you scroll, highlighting the current section as it goes.",
+    "website": "https://www.restaurantecain.es?ref=navbar.design",
+    "styles": [
+      "animated"
+    ],
+    "types": [
+      "static"
+    ],
+    "image": "/images/navbars/cain.png",
+    "imageWidth": 1920,
+    "imageHeight": 1080,
+    "featured": false
+  },
+  {
+    "slug": "greptile",
+    "title": "Greptile",
+    "description": "Greptile's sticky, minimal mega-menu is a crash course in how to give your users everything you need in a small and compact navbar.",
+    "website": "https://greptile.com?ref=navbar.design",
+    "styles": [
+      "minimalism"
+    ],
+    "types": [
+      "mega",
+      "static"
+    ],
+    "image": "/images/navbars/greptile.png",
+    "imageWidth": 1920,
+    "imageHeight": 1080,
+    "featured": false
+  },
+  {
+    "slug": "shopify-supply",
+    "title": "Shopify Supply",
+    "description": "Shopify came out of nowhere earlier in 2025 with a random 3D augmented merch store, which also came with a nice full width mega menu!",
+    "website": "https://shopify.supply?ref=navbar.design",
+    "styles": [
+      "minimalism",
+      "monochromatic"
+    ],
+    "types": [
+      "mega"
+    ],
+    "image": "/images/navbars/shopify-supply.png",
+    "imageWidth": 1920,
+    "imageHeight": 1080,
+    "featured": false
+  },
+  {
+    "slug": "bruno-simon",
+    "title": "Bruno Simon",
+    "description": "Ok so this technically isn't a navbar, BUT, Bruno has made his entire website a 3D explorable navigation system, that you navigate via a 3D RC car. No, seriously.",
+    "website": "https://bruno-simon.com?ref=navbar.design",
+    "styles": [
+      "3d"
+    ],
+    "types": [
+      "full-screen"
+    ],
+    "image": "/images/navbars/bruno-simon.png",
+    "imageWidth": 1920,
+    "imageHeight": 1080,
+    "featured": false
+  },
+  {
+    "slug": "floor796",
+    "title": "Floor796",
+    "description": "Floor796 is an insane website, but we're not here for that, we're here for the navbar. Floor796's navbar is taken straight from a Linux OS and gives the user the feeling of exploring this world inside their own computer.",
+    "website": "https://floor796.com?ref=navbar.design",
+    "styles": [
+      "retro"
+    ],
+    "types": [
+      "static"
+    ],
+    "image": "/images/navbars/floor796.png",
+    "imageWidth": 1920,
+    "imageHeight": 1080,
+    "featured": false
+  },
+  {
+    "slug": "lando-norris",
+    "title": "Lando Norris",
+    "description": "Lando Norris's website took the internet by storm when it launched, mainly due to the amazing hover and cursor effects seen in the hero section, but the full screen navbar is also a work of art.",
+    "website": "https://landonorris.com?ref=navbar.design",
+    "styles": [
+      "loud",
+      "illustrated"
+    ],
+    "types": [
+      "full-screen"
+    ],
+    "image": "/images/navbars/lando-norris.png",
+    "imageWidth": 1920,
+    "imageHeight": 1080,
+    "featured": false
+  },
+  {
+    "slug": "american-haiku",
+    "title": "American Haiku",
+    "description": "American Haiku is a creative studio from NY who not only deliver insane projects but also turned their website into an experience of it's own. The site has both a static navbar that mimics a camcorder UI aswell as a sidedrawer that looks equally unique and vintage.",
+    "website": "https://americanhaiku.xyz?ref=navbar.design",
+    "styles": [
+      "animated"
+    ],
+    "types": [
+      "static",
+      "side-drawer"
+    ],
+    "image": "/images/navbars/american-haiku.png",
+    "imageWidth": 1920,
+    "imageHeight": 1080,
+    "featured": false
+  },
+  {
+    "slug": "yun-gao",
+    "title": "YUN GAO",
+    "description": "An extremely unique website needs an extremely unique navbar and thats what Yun Gao brings. A simple and cute illustrated navbar with 3 simple options that sticks to your screen like a piece of chewing gum.",
+    "website": "https://yun-gao.com?ref=navbar.design",
+    "styles": [
+      "illustrated"
+    ],
+    "types": [
+      "sticky"
+    ],
+    "image": "/images/navbars/yun-gao.png",
+    "imageWidth": 1920,
+    "imageHeight": 1080,
+    "featured": false
+  },
+  {
+    "slug": "edoardo-lunardi",
+    "title": "Edoardo Lunardi",
+    "description": "Edo is an award winning Senior Frontend Developer with nearly a decade of experience. His personal website brings vintage CRT aesthetics with a navbar that looks like it was pulled straight from a terminal.",
+    "website": "https://edoardolunardi.dev?ref=navbar.design",
+    "styles": [
+      "minimalism",
+      "retro"
+    ],
+    "types": [
+      "static"
+    ],
+    "image": "/images/navbars/edoardo-lunardi.png",
+    "imageWidth": 1920,
+    "imageHeight": 1080,
+    "featured": false
+  },
+  {
+    "slug": "lafour",
+    "title": "LAFOUR",
+    "description": "LAFOUR wins the award for the most minimal navbar on the internet. The main attraction on the LAFOUR website is the striking videography looping in the background so understandbly the navbar takes a backseat, but still gives you all you need.",
+    "website": "https://lafour.com?ref=navbar.design",
+    "styles": [
+      "minimalism"
+    ],
+    "types": [
+      "static"
+    ],
+    "image": "/images/navbars/lafour.png",
+    "imageWidth": 1920,
+    "imageHeight": 1080,
+    "featured": false
+  },
+  {
+    "slug": "dub-co",
+    "title": "Dub Co",
+    "description": "Dub's mega menu is a treat for your eyeballs, with smooth item transitions and soft rounded edges, this is a masterclass is mega menu UX.",
+    "website": "https://dub.co?ref=navbar.design",
+    "styles": [
+      "animated"
+    ],
+    "types": [
+      "mega"
+    ],
+    "image": "/images/navbars/dub-co.png",
+    "imageWidth": 1920,
+    "imageHeight": 1080,
+    "featured": false
+  },
+  {
+    "slug": "nektar",
+    "title": "Nektar",
+    "description": "The Nektar navbar is a slim, understated bar that feels more like an editorial masthead than a typical website menu, using generous negative space and small, precise typography to keep the focus on the work.",
+    "website": "https://nektar.tv?ref=navbar.design",
+    "styles": [
+      "minimalism",
+      "loud"
+    ],
+    "types": [
+      "side-drawer"
+    ],
+    "image": "/images/navbars/nektar.png",
+    "imageWidth": 1920,
+    "imageHeight": 1080,
+    "featured": false
+  },
+  {
+    "slug": "hacktron-ai",
+    "title": "Hackton AI",
+    "description": "Hacktrons navbar is a minimal, high-contrast strip that keeps navigation and CTAs fixed at the top, pairing a simple wordmark with clear text links and bold primary buttons.",
+    "website": "https://www.hacktron.ai?ref=navbar.design",
+    "styles": [
+      "minimalism",
+      "monochromatic"
+    ],
+    "types": [
+      "static"
+    ],
+    "image": "/images/navbars/hacktron-ai.png",
+    "imageWidth": 1920,
+    "imageHeight": 1080,
+    "featured": false
+  },
+  {
+    "slug": "scout-ai",
+    "title": "Scout AI",
+    "description": "Scouts navbar is a clean, defense-grade strip that frames the Scout AI wordmark with simple text links on the left and a clear contact call-to-action on the right.",
+    "website": "https://www.scoutco.ai?ref=navbar.design",
+    "styles": [
+      "minimalism"
+    ],
+    "types": [
+      "sticky"
+    ],
+    "image": "/images/navbars/scout-ai.png",
+    "imageWidth": 2992,
+    "imageHeight": 1602,
+    "featured": false
+  }
+]

@@ -1,0 +1,317 @@
+.content {
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding: 120px var(--pad-x);
+}
+
+.container {
+  width: 100%;
+  max-width: var(--container-max);
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 160px;
+}
+
+.intro {
+  width: 100%;
+  display: flex;
+  flex-direction: row;
+  align-items: flex-start;
+  gap: 80px;
+}
+
+.intro > * {
+  flex: 1 1 0;
+  min-width: 0;
+}
+
+.introText {
+  display: flex;
+  flex-direction: column;
+  gap: 40px;
+}
+
+.introText .lead {
+  font-size: 32px;
+  line-height: 1.2;
+  letter-spacing: -0.02em;
+}
+
+.introText .body {
+  font-size: 20px;
+  line-height: 1.4;
+}
+
+.buttons {
+  display: flex;
+  flex-direction: row;
+  gap: 16px;
+  flex-wrap: wrap;
+}
+
+.illustration {
+  width: 100%;
+}
+
+.illustration img {
+  width: 100%;
+  height: auto;
+}
+
+.stats {
+  width: 100%;
+  display: grid;
+  grid-template-columns: repeat(4, minmax(0, 1fr));
+  gap: 40px;
+}
+
+.stat {
+  display: flex;
+  flex-direction: column;
+  gap: 40px;
+  border-top: 1px solid var(--border);
+}
+
+.statText {
+  display: flex;
+  flex-direction: column;
+  gap: 16px;
+}
+
+.statValue {
+  font-family: var(--font-mono);
+  font-size: 80px;
+  line-height: 1;
+  letter-spacing: -0.02em;
+}
+
+.statLabel {
+  font-size: 20px;
+  line-height: 1.4;
+}
+
+.curated {
+  width: 100%;
+  display: flex;
+  flex-direction: row;
+  gap: 80px;
+  padding: 80px;
+  border-left: 2px solid var(--text);
+}
+
+.curated > * {
+  flex: 1 1 0;
+  min-width: 0;
+}
+
+.eyebrow {
+  font-size: 14px;
+  font-weight: 500;
+  line-height: 21px;
+}
+
+.h2 {
+  font-family: var(--font-mono);
+  font-size: 40px;
+  line-height: 1;
+  letter-spacing: -0.02em;
+}
+
+.curatedLeft {
+  display: flex;
+  flex-direction: column;
+  gap: 16px;
+}
+
+.curatedRight {
+  display: flex;
+  flex-direction: column;
+  gap: 24px;
+}
+
+.curatedRight p {
+  font-size: 20px;
+  line-height: 1.4;
+}
+
+.curatedRight p + p {
+  margin-top: 16px;
+}
+
+.users {
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  gap: 40px;
+}
+
+.usersGrid {
+  display: grid;
+  grid-template-columns: repeat(3, minmax(0, 1fr));
+  border-top: 1px solid var(--border);
+  border-right: 1px solid var(--border);
+}
+
+.user {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  min-height: 240px;
+  padding: 24px;
+  border-left: 1px solid var(--border);
+  border-bottom: 1px solid var(--border);
+  background: var(--bg);
+}
+
+.userIcon {
+  display: flex;
+  width: 24px;
+  height: 24px;
+}
+
+.userText {
+  display: flex;
+  flex-direction: column;
+  gap: 8px;
+}
+
+.userText h3 {
+  font-size: 20px;
+  line-height: 1.1;
+}
+
+.userText p {
+  font-size: 18px;
+  line-height: 1.5;
+}
+
+.offers {
+  width: 100%;
+  display: flex;
+  flex-direction: row;
+  align-items: flex-start;
+  gap: 40px;
+}
+
+.offer {
+  flex: 1 1 0;
+  min-width: 0;
+  display: flex;
+  flex-direction: column;
+  gap: 16px;
+  padding: 64px;
+  border-left: 2px solid var(--text);
+}
+
+.offer p.body {
+  font-size: 18px;
+  line-height: 1.5;
+}
+
+.offer .cta {
+  margin-top: 8px;
+}
+
+@media (min-width: 810px) and (max-width: 1199.98px) {
+  .usersGrid {
+    grid-template-columns: repeat(2, minmax(0, 1fr));
+  }
+}
+
+@media (max-width: 809.98px) {
+  .content {
+    padding: 40px 16px;
+  }
+
+  .container {
+    gap: 64px;
+  }
+
+  .intro {
+    flex-direction: column;
+    gap: 24px;
+  }
+
+  .intro > * {
+    flex: none;
+    width: 100%;
+  }
+
+  .introText {
+    gap: 24px;
+  }
+
+  .introText .lead {
+    font-size: 24px;
+  }
+
+  .introText .body {
+    font-size: 16px;
+  }
+
+  .stats {
+    grid-template-columns: minmax(0, 1fr);
+  }
+
+  .statValue {
+    font-size: 48px;
+  }
+
+  .curated {
+    flex-direction: column;
+    gap: 40px;
+    padding: 40px;
+  }
+
+  .curated > * {
+    flex: none;
+  }
+
+  .h2 {
+    font-size: 32px;
+  }
+
+  .curatedRight p {
+    font-size: 16px;
+  }
+
+  .users {
+    gap: 24px;
+  }
+
+  .usersGrid {
+    grid-template-columns: minmax(0, 1fr);
+  }
+
+  .user {
+    min-height: 0;
+    justify-content: flex-start;
+    gap: 24px;
+  }
+
+  .userText h3 {
+    font-size: 16px;
+  }
+
+  .userText p {
+    font-size: 16px;
+  }
+
+  .offers {
+    flex-direction: column;
+    gap: 16px;
+  }
+
+  .offer {
+    flex: none;
+    width: 100%;
+    padding: 40px;
+  }
+
+  .offer p.body {
+    font-size: 16px;
+  }
+}
