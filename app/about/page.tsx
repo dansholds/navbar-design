@@ -1,6 +1,8 @@
 import type { Metadata } from "next";
 import Image from "next/image";
 import Button from "@/components/Button";
+import CountUp, { type StatFormat } from "@/components/CountUp";
+import stats from "@/content/stats.json";
 import { Code, Figma, PenTool } from "@/components/Icons";
 import { DEFAULT_DESCRIPTION, OG_IMAGE } from "@/lib/content";
 import styles from "./about.module.css";
@@ -51,12 +53,14 @@ export default function AboutPage() {
           />
         </div>
 
-        <div className={styles.stats}>
-          {["Monthly visitors", "Return rate", "Monthly page views", "Email subscribers"].map((label) => (
-            <div key={label} className={styles.stat}>
+        <div className={styles.stats} aria-label={`Site statistics, ${stats.period.toLowerCase()}`}>
+          {stats.items.map((item) => (
+            <div key={item.label} className={styles.stat}>
               <div className={styles.statText}>
-                <p className={styles.statValue}>-</p>
-                <p className={styles.statLabel}>{label}</p>
+                <p className={styles.statValue}>
+                  <CountUp value={item.value} format={item.format as StatFormat} />
+                </p>
+                <p className={styles.statLabel}>{item.label}</p>
               </div>
             </div>
           ))}

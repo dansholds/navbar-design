@@ -64,3 +64,8 @@ Valid `styles` and `types` slugs (and their titles/descriptions) are in `content
 `"featured": true` on the two entries that should appear in the home page "Featured" section.
 
 The home hero ticker is built from the same list, so new entries appear there automatically.
+
+## Updating the About page stats
+
+The four figures on `/about` live in `content/stats.json`. Update `value` (and `updated`) from the Databuddy 30-day
+view whenever you like; `format` is `compact` (1300 renders as 1.3K), `percent` or `plain`.

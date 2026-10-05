@@ -1,0 +1,10 @@
+{
+  "period": "Last 30 days",
+  "updated": "2026-10-05",
+  "items": [
+    { "label": "Monthly visitors", "value": 1300, "format": "compact" },
+    { "label": "Monthly page views", "value": 3300, "format": "compact" },
+    { "label": "Monthly sessions", "value": 1400, "format": "compact" },
+    { "label": "Bounce rate", "value": 39.5, "format": "percent" }
+  ]
+}
