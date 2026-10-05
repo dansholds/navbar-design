@@ -1,17 +1,19 @@
 import type { Metadata } from "next";
 import Link from "next/link";
 import Button from "@/components/Button";
+import JsonLd from "@/components/JsonLd";
 import { ArrowUpRight } from "@/components/Icons";
 import NavbarGrid from "@/components/NavbarGrid";
 import Scramble from "@/components/Scramble";
 import Ticker from "@/components/Ticker";
 import { DEFAULT_DESCRIPTION, DEFAULT_TITLE, featuredNavbars, latestNavbars, navbars, styles as styleCats, types, OG_IMAGE } from "@/lib/content";
+import { collectionLd, graph } from "@/lib/seo";
 import styles from "./home.module.css";
 
 export const metadata: Metadata = {
   title: { absolute: DEFAULT_TITLE },
   description: DEFAULT_DESCRIPTION,
-  alternates: { canonical: "/" },
+  alternates: { canonical: "https://navbar.design/" },
   openGraph: { type: "website", title: DEFAULT_TITLE, description: DEFAULT_DESCRIPTION, url: "/", images: [OG_IMAGE] },
   twitter: { card: "summary_large_image", title: DEFAULT_TITLE, description: DEFAULT_DESCRIPTION, images: [OG_IMAGE.url] },
 };
@@ -23,6 +25,16 @@ export default function HomePage() {
 
   return (
     <>
+      <JsonLd
+        data={graph(
+          collectionLd({
+            path: "/",
+            name: DEFAULT_TITLE,
+            description: DEFAULT_DESCRIPTION,
+            navbars: latest,
+          }),
+        )}
+      />
       <section className={styles.hero}>
         <Ticker />
         <div className={styles.heroFade} />

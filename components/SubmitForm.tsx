@@ -29,7 +29,7 @@ export default function SubmitForm() {
 
   return (
     <div className={styles.formWrap}>
-      <form className={`${styles.form} ${styles.offline}`} aria-disabled="true">
+      <form className={`${styles.form} ${styles.offline}`}>
         <label className={styles.field}>
           <span className="sr-only">Link</span>
           <input className={styles.input} type="url" name="website" placeholder="Link" disabled />

@@ -1,0 +1,70 @@
+{
+  "styles": {
+    "3d": [
+      "A 3D navbar uses depth, perspective or a rendered scene as the navigation itself, rather than a flat strip of links. It is the rarest style in the directory because it costs the most to build and the most to load, and because most sites don't have a story that justifies it.",
+      "Bruno Simon's portfolio is the reference example here: the whole site is a 3D world you drive around, and the navigation is the terrain. Use this style when the navigation is the product demo. If it isn't, a static bar will serve your visitors better."
+    ],
+    "animated": [
+      "Animated navbars change as you use them: they reveal a hidden layer, mark the section you're reading, or morph as you scroll. The animation is doing a job, not decorating. Cain's bar tracks the current section as you move down the page, and Fonts Ninja keeps a minimal sticky bar until you open an animated panel with extra options.",
+      "The trap is motion that fires on every scroll event and never settles. The examples below earn their animation by making the current state clearer than a static bar could. Dub's mega menu is the one to study for item transitions."
+    ],
+    "grid": [
+      "Grid navbars sit on a visible or implied grid and line their links up with the page columns beneath them. The navigation feels built into the layout rather than floated over it. ANUC's bar slides down the page as you scroll, locked to the same rails as the content.",
+      "This style suits product and data companies, where the rest of the page is already structured. Paradigm AI and Beehiiv both use it to make dense mega menus read as tables rather than lists."
+    ],
+    "illustrated": [
+      "Illustrated navbars use drawn elements, characters or custom icons as the navigation. They are almost always personal sites or studios where the illustration is the brand. Yun Gao's three simple links and Adrien Lamy's Paris-mercenary persona both make the bar part of the artwork.",
+      "The risk is legibility: a drawn label has to read as a link at a glance. Lando Norris's site solves this by pairing the illustration with hover and cursor effects that make every target obvious."
+    ],
+    "loud": [
+      "Loud navbars demand attention with size, colour, or contrast. They refuse to be the quiet strip at the top of the page. Adrien Lamy's red-and-black bar and Lando Norris's hero-sized navigation both lead with the navbar instead of hiding it.",
+      "Loud works when the brand is loud. Nektar is the exception worth noting: a slim bar with generous white space that still reads as loud because the typography is so confident."
+    ],
+    "minimalism": [
+      "Minimalist navbars strip navigation to the links that matter, with plenty of negative space and little or no decoration. It is the most common style in the directory, with fifteen entries, because it is the hardest to get wrong and the easiest to get boring.",
+      "The good ones still have one idea. L'Étude runs its navigation vertically down the centre of the page and uses it as a work filter. LAFOUR has possibly the most minimal navbar on the internet, with the videography doing the talking. Greptile fits a full mega menu into a compact, sticky strip."
+    ],
+    "monochromatic": [
+      "Monochromatic navbars use one hue, usually black and white, with no accent colour. Everything in the bar lives in the same tonal range, so hierarchy has to come from weight and spacing rather than colour.",
+      "Naked City Films, Shopify Supply and Hacktron AI all use high-contrast single-colour bars. Beehiiv proves the style scales to a large mega menu: the dark panel stays readable because nothing in it competes for attention."
+    ],
+    "retro": [
+      "Retro navbars borrow from older interfaces: terminal menus, operating system chrome, CRT monitors and the web of the late nineties. The nostalgia is the point, but the best examples use it as a system rather than a skin.",
+      "Stripe.dev's navbar mirrors a text-mode TUI menu, and Floor796 lifts its bar straight from a Linux desktop. Edoardo Lunardi goes further and wraps his whole navigation in vintage CRT scanlines. All three are instantly recognisable and still easy to use."
+    ],
+    "typographic": [
+      "Typographic navbars make the type the whole interface. No icons, no imagery, often no borders. The typeface and the spacing around it do all the work of telling you where you can go.",
+      "Velvetyne, a type foundry, is the clearest example: the entire navigation is laid out across the top of the hero in the foundry's own fonts. If your product is type, your navbar should probably be type too."
+    ]
+  },
+  "types": {
+    "dropdown": [
+      "A dropdown navbar opens a single panel under one link, rather than the multi-column spread of a mega menu. More than a flat list, less than a takeover.",
+      "Factory pairs a clean monotype bar with a large dropdown, and Beehiiv uses dropdowns inside a larger mega menu. The pattern suits products with a handful of grouped pages, where a mega menu would feel empty."
+    ],
+    "full-screen": [
+      "Full-screen navbars take over the entire viewport when opened, so the page disappears and the navigation becomes the page. It's a common pattern on mobile that a few desktop sites have adopted for drama.",
+      "Bruno Simon's 3D world and Lando Norris's hero-sized navigation are the two examples here, and both are portfolio sites where the navigation can afford to be an event. For a product site, reserve this for mobile."
+    ],
+    "mega": [
+      "A mega menu is a large panel that opens from the navbar and shows many links at once, usually grouped into columns with headings, descriptions or icons. It exists because some products have too many pages for a flat bar.",
+      "Beehiiv, Dub, Greptile, Paradigm AI and Shopify Supply all use mega menus. Dub's is the masterclass for transitions and rounded panels. Greptile's is the one to copy if you need a full menu in a small, sticky bar. Shopify Supply's runs full width."
+    ],
+    "mobile": [
+      "Mobile navbars are built for a phone first: a hamburger or tab bar, a drawer or sheet, and touch targets sized for thumbs. Most of the directory shows desktop navigation, so this category collects navbars whose mobile version is the main event.",
+      "We are still hunting for the best examples. If your site's mobile navigation is better than its desktop one, submit it and we'll add it here."
+    ],
+    "side-drawer": [
+      "A side-drawer navbar lives on the left or right edge, or slides in from it, instead of running across the top. On desktop it frees the full width of the page for content. On mobile it is the standard off-canvas menu.",
+      "L'Étude runs its drawer down the centre of the page as a vertical list that also filters the work. East Asian Graphics Archive, Adrien Lamy, American Haiku and Nektar each put navigation at the edge so the page can breathe."
+    ],
+    "static": [
+      "A static navbar sits at the top of the page and scrolls away with it. No sticky behaviour, no hiding and revealing. It is the oldest pattern on the web and still the right one for most content sites, because it never covers what you're reading.",
+      "Twelve of the navbars in the directory are static, from L'Étude and Velvetyne to Cain and LAFOUR. Static doesn't mean plain: Floor796's Linux-style bar and Edoardo Lunardi's CRT navigation are both static."
+    ],
+    "sticky": [
+      "A sticky navbar stays fixed at the top of the viewport as you scroll, so the links are always one click away. It costs vertical space on every screen, which is why the good ones are slim.",
+      "Nine entries here are sticky. Stripe.dev's TUI-style bar and Scout AI's defence-grade strip stay out of the way. ANUC's slides down on rails. Fonts Ninja hides an animated panel behind a minimal sticky bar, and Greptile fits an entire mega menu into one."
+    ]
+  }
+}

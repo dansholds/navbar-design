@@ -1,8 +1,10 @@
 import type { Metadata } from "next";
 import Faq from "@/components/Faq";
+import JsonLd from "@/components/JsonLd";
 import Scramble from "@/components/Scramble";
 import SubmitForm from "@/components/SubmitForm";
 import { DEFAULT_DESCRIPTION, OG_IMAGE } from "@/lib/content";
+import { faqLd, graph } from "@/lib/seo";
 import styles from "./submit.module.css";
 
 const TITLE = "Navbar Design / Submit";
@@ -30,6 +32,7 @@ const FAQ = [
 export default function SubmitPage() {
   return (
     <section className={styles.content}>
+      <JsonLd data={graph(faqLd(FAQ))} />
       <div className={styles.container}>
         <Scramble as="h1" text="Navbar Submission" className={styles.heading} />
         <SubmitForm />

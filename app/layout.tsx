@@ -3,7 +3,9 @@ import { Fragment_Mono, Geist } from "next/font/google";
 import Script from "next/script";
 import Footer from "@/components/Footer";
 import Header from "@/components/Header";
+import JsonLd from "@/components/JsonLd";
 import { DEFAULT_DESCRIPTION, DEFAULT_TITLE, SITE_NAME, SITE_URL } from "@/lib/content";
+import { ORG, WEBSITE, graph } from "@/lib/seo";
 import "./globals.css";
 
 const geist = Geist({
@@ -61,6 +63,7 @@ export default function RootLayout({ children }: LayoutProps<"/">) {
   return (
     <html lang="en" className={`${geist.variable} ${fragmentMono.variable}`}>
       <body>
+        <JsonLd data={graph(WEBSITE, ORG)} />
         <Header />
         <main>{children}</main>
         <Footer />

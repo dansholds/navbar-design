@@ -65,6 +65,15 @@ Valid `styles` and `types` slugs (and their titles/descriptions) are in `content
 
 The home hero ticker is built from the same list, so new entries appear there automatically.
 
+## SEO and GEO
+
+- Every page carries JSON-LD (site, organisation, breadcrumbs; CreativeWork per navbar, CollectionPage + ItemList per
+  category and list page, FAQPage on /submit) via `lib/seo.ts` and `components/JsonLd.tsx`.
+- Titles and descriptions for navbars and categories are generated in `lib/seo.ts` from the content JSON.
+- `/sitemap.xml` includes image entries; `/robots.txt` allows all crawlers and names the AI ones; `/llms.txt` is a plain
+  text map of the directory for AI assistants (generated from the content at build time).
+- Category explainers live in `content/category-copy.json` (two paragraphs per style and type). Edit freely.
+
 ## Updating the About page stats
 
 The four figures on `/about` live in `content/stats.json`. Update `value`, `delta` and `updated` from the Databuddy

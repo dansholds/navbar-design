@@ -1,0 +1,37 @@
+.nav {
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  padding: 24px var(--pad-x) 0;
+}
+
+.list {
+  width: 100%;
+  max-width: var(--container-max);
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  gap: 8px;
+  font-family: var(--font-mono);
+  font-size: 14px;
+  line-height: 21px;
+  color: var(--placeholder);
+}
+
+.list a {
+  color: var(--text);
+}
+
+.list a:hover {
+  text-decoration: underline;
+}
+
+.sep {
+  user-select: none;
+}
+
+@media (max-width: 809.98px) {
+  .nav {
+    padding-top: 16px;
+  }
+}
