@@ -73,6 +73,31 @@
   line-height: 21px;
 }
 
+.offline {
+  opacity: 0.4;
+  pointer-events: none;
+  user-select: none;
+}
+
+.offline .input,
+.offline .submit {
+  cursor: not-allowed;
+}
+
+.offline .submit {
+  background: var(--muted-bg);
+  color: var(--text);
+}
+
+.offlineNote {
+  margin-top: 16px;
+  font-family: var(--font-mono);
+  font-size: 14px;
+  line-height: 21px;
+  color: var(--placeholder);
+  text-align: center;
+}
+
 .tally {
   width: 100%;
   border: 0;

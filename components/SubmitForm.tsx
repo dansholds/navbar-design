@@ -4,8 +4,7 @@ import styles from "@/app/submit/submit.module.css";
 /**
  * Submission form. When NEXT_PUBLIC_TALLY_FORM_ID is set the Tally form is
  * embedded (set the form's redirect-on-completion to /thank-you in Tally).
- * Without it, the original form layout is rendered so the page still looks
- * right, but there is nowhere for submissions to go yet.
+ * Without it, the form is rendered greyed out with an "offline" notice.
  */
 export default function SubmitForm() {
   const formId = process.env.NEXT_PUBLIC_TALLY_FORM_ID;
@@ -30,19 +29,22 @@ export default function SubmitForm() {
 
   return (
     <div className={styles.formWrap}>
-      <form className={styles.form} action="/thank-you" method="get">
+      <form className={`${styles.form} ${styles.offline}`} aria-disabled="true">
         <label className={styles.field}>
           <span className="sr-only">Link</span>
-          <input className={styles.input} type="url" name="website" placeholder="Link" required />
+          <input className={styles.input} type="url" name="website" placeholder="Link" disabled />
         </label>
         <label className={styles.field}>
           <span className="sr-only">Your email</span>
-          <input className={styles.input} type="email" name="email" placeholder="Your email" required />
+          <input className={styles.input} type="email" name="email" placeholder="Your email" disabled />
         </label>
-        <button type="submit" className={styles.submit}>
+        <button type="button" className={styles.submit} disabled>
           Submit
         </button>
       </form>
+      <p className={styles.offlineNote} role="status">
+        Submissions are currently offline
+      </p>
     </div>
   );
 }

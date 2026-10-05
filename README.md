@@ -32,7 +32,7 @@ npm run lint
 The `/submit` form is a Tally embed. In Tally, create a form with a "Link" (URL) field and a "Your email" field,
 set its *Redirect on completion* to `https://navbar.design/thank-you`, then copy the form ID from the share URL
 (`https://tally.so/r/<FORM_ID>`) into `NEXT_PUBLIC_TALLY_FORM_ID` (Vercel env var, or `.env.local` locally).
-Without the variable the page renders the original form layout, but submissions have nowhere to go.
+Without the variable the form is shown greyed out with a "Submissions are currently offline" notice.
 
 ## Adding a navbar
 
