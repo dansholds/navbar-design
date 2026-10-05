@@ -9,7 +9,7 @@ import { ChevronRight } from "@/components/Icons";
 import NavbarGrid from "@/components/NavbarGrid";
 import Scramble from "@/components/Scramble";
 import { SITE_NAME, getNavbar, getStyle, getType, navbars, nextNavbar, relatedNavbars } from "@/lib/content";
-import { breadcrumbLd, graph, navbarDescription, navbarLd, navbarTitle } from "@/lib/seo";
+import { breadcrumbLd, graph, navbarDescription, navbarLd, navbarTitle, shareImage } from "@/lib/seo";
 import styles from "./detail.module.css";
 
 type Params = Promise<{ slug: string }>;
@@ -28,7 +28,7 @@ export async function generateMetadata({ params }: { params: Params }): Promise<
   const typeNames = navbar.types.map((x) => getType(x)?.title ?? x);
   const title = navbarTitle(navbar, styleNames, typeNames);
   const description = navbarDescription(navbar, styleNames, typeNames);
-  const image = { url: navbar.image, width: navbar.imageWidth, height: navbar.imageHeight, alt: `${navbar.title} navbar` };
+  const image = shareImage(navbar);
   return {
     title: { absolute: `${title} | ${SITE_NAME}` },
     description,
@@ -95,7 +95,7 @@ export default async function NavbarPage({ params }: { params: Params }) {
                 <p className={styles.tagLabel}>Styles</p>
                 <nav className={styles.tagList} aria-label="Styles">
                   {navbar.styles.map((s) => (
-                    <Link key={s} href={`/style/${s}`}>
+                    <Link key={s} href={`/style/${s}`} prefetch={false}>
                       {getStyle(s)?.title ?? s}
                     </Link>
                   ))}
@@ -105,7 +105,7 @@ export default async function NavbarPage({ params }: { params: Params }) {
                 <p className={styles.tagLabel}>Type</p>
                 <nav className={styles.tagList} aria-label="Types">
                   {navbar.types.map((t) => (
-                    <Link key={t} href={`/type/${t}`}>
+                    <Link key={t} href={`/type/${t}`} prefetch={false}>
                       {getType(t)?.title ?? t}
                     </Link>
                   ))}

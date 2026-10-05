@@ -11,7 +11,7 @@
       "side-drawer",
       "static"
     ],
-    "image": "/images/navbars/letude.png",
+    "image": "/images/navbars/letude.jpg",
     "imageWidth": 1600,
     "imageHeight": 900,
     "featured": false
@@ -29,8 +29,8 @@
       "static"
     ],
     "image": "/images/navbars/east-asian-graphics-archive.png",
-    "imageWidth": 2652,
-    "imageHeight": 1748,
+    "imageWidth": 1920,
+    "imageHeight": 1266,
     "featured": false
   },
   {
@@ -46,8 +46,8 @@
       "sticky"
     ],
     "image": "/images/navbars/paradigm-ai.png",
-    "imageWidth": 3424,
-    "imageHeight": 1734,
+    "imageWidth": 1920,
+    "imageHeight": 972,
     "featured": false
   },
   {
@@ -63,8 +63,8 @@
       "sticky"
     ],
     "image": "/images/navbars/stripe-dot-dev.png",
-    "imageWidth": 4526,
-    "imageHeight": 2142,
+    "imageWidth": 1920,
+    "imageHeight": 909,
     "featured": true
   },
   {
@@ -79,9 +79,9 @@
     "types": [
       "static"
     ],
-    "image": "/images/navbars/anima.png",
-    "imageWidth": 2966,
-    "imageHeight": 1994,
+    "image": "/images/navbars/anima.jpg",
+    "imageWidth": 1920,
+    "imageHeight": 1291,
     "featured": true
   },
   {
@@ -96,7 +96,7 @@
     "types": [
       "static"
     ],
-    "image": "/images/navbars/cho-choi-creative.png",
+    "image": "/images/navbars/cho-choi-creative.jpg",
     "imageWidth": 1920,
     "imageHeight": 1080,
     "featured": false
@@ -114,8 +114,8 @@
       "sticky"
     ],
     "image": "/images/navbars/naked-city-films.png",
-    "imageWidth": 2254,
-    "imageHeight": 2000,
+    "imageWidth": 1920,
+    "imageHeight": 1704,
     "featured": false
   },
   {
@@ -214,7 +214,7 @@
     "types": [
       "sticky"
     ],
-    "image": "/images/navbars/anuc-home.png",
+    "image": "/images/navbars/anuc-home.jpg",
     "imageWidth": 1920,
     "imageHeight": 1080,
     "featured": false
@@ -230,7 +230,7 @@
     "types": [
       "static"
     ],
-    "image": "/images/navbars/cain.png",
+    "image": "/images/navbars/cain.jpg",
     "imageWidth": 1920,
     "imageHeight": 1080,
     "featured": false
@@ -247,7 +247,7 @@
       "mega",
       "static"
     ],
-    "image": "/images/navbars/greptile.png",
+    "image": "/images/navbars/greptile.jpg",
     "imageWidth": 1920,
     "imageHeight": 1080,
     "featured": false
@@ -264,7 +264,7 @@
     "types": [
       "mega"
     ],
-    "image": "/images/navbars/shopify-supply.png",
+    "image": "/images/navbars/shopify-supply.jpg",
     "imageWidth": 1920,
     "imageHeight": 1080,
     "featured": false
@@ -280,7 +280,7 @@
     "types": [
       "full-screen"
     ],
-    "image": "/images/navbars/bruno-simon.png",
+    "image": "/images/navbars/bruno-simon.jpg",
     "imageWidth": 1920,
     "imageHeight": 1080,
     "featured": false
@@ -296,7 +296,7 @@
     "types": [
       "static"
     ],
-    "image": "/images/navbars/floor796.png",
+    "image": "/images/navbars/floor796.jpg",
     "imageWidth": 1920,
     "imageHeight": 1080,
     "featured": false
@@ -313,7 +313,7 @@
     "types": [
       "full-screen"
     ],
-    "image": "/images/navbars/lando-norris.png",
+    "image": "/images/navbars/lando-norris.jpg",
     "imageWidth": 1920,
     "imageHeight": 1080,
     "featured": false
@@ -379,7 +379,7 @@
     "types": [
       "static"
     ],
-    "image": "/images/navbars/lafour.png",
+    "image": "/images/navbars/lafour.jpg",
     "imageWidth": 1920,
     "imageHeight": 1080,
     "featured": false
@@ -395,7 +395,7 @@
     "types": [
       "mega"
     ],
-    "image": "/images/navbars/dub-co.png",
+    "image": "/images/navbars/dub-co.jpg",
     "imageWidth": 1920,
     "imageHeight": 1080,
     "featured": false
@@ -412,7 +412,7 @@
     "types": [
       "side-drawer"
     ],
-    "image": "/images/navbars/nektar.png",
+    "image": "/images/navbars/nektar.jpg",
     "imageWidth": 1920,
     "imageHeight": 1080,
     "featured": false
@@ -445,9 +445,9 @@
     "types": [
       "sticky"
     ],
-    "image": "/images/navbars/scout-ai.png",
-    "imageWidth": 2992,
-    "imageHeight": 1602,
+    "image": "/images/navbars/scout-ai.jpg",
+    "imageWidth": 1920,
+    "imageHeight": 1028,
     "featured": false
   }
 ]

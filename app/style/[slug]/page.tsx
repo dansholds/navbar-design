@@ -2,7 +2,7 @@ import type { Metadata } from "next";
 import { notFound } from "next/navigation";
 import CategoryPage from "@/components/CategoryPage";
 import { getStyle, navbarsByStyle, styles, SITE_NAME } from "@/lib/content";
-import { categoryDescription, categoryTitle } from "@/lib/seo";
+import { categoryDescription, categoryTitle, shareImage } from "@/lib/seo";
 import copy from "@/content/category-copy.json";
 import { styleTabs } from "@/lib/tabs";
 
@@ -21,9 +21,7 @@ export async function generateMetadata({ params }: { params: Params }): Promise<
   const items = navbarsByStyle(slug);
   const title = categoryTitle(style, "style", items.length);
   const description = categoryDescription(style, "style", items.length);
-  const image = items[0]
-    ? { url: items[0].image, width: items[0].imageWidth, height: items[0].imageHeight }
-    : { url: "/og-image.png", width: 1200, height: 630 };
+  const image = items[0] ? shareImage(items[0]) : { url: "/og-image.png", width: 1200, height: 630 };
   return {
     title: { absolute: `${title} | ${SITE_NAME}` },
     description,

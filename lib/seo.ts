@@ -18,6 +18,18 @@ export const WEBSITE = {
   publisher: { "@id": ORG["@id"] },
 };
 
+/** Share-card image served through the image optimiser at 1200px instead of the raw source file. */
+export function shareImage(n: Navbar) {
+  const width = Math.min(1200, n.imageWidth);
+  const height = Math.round((n.imageHeight / n.imageWidth) * width);
+  return {
+    url: `${SITE_URL}/_next/image?url=${encodeURIComponent(n.image)}&w=1200&q=75`,
+    width,
+    height,
+    alt: `${n.title} navbar`,
+  };
+}
+
 export function abs(path: string): string {
   return `${SITE_URL}${path}`;
 }

@@ -29,13 +29,14 @@ export default function Ticker() {
               {Array.from({ length: COPIES }).flatMap((_, c) =>
                 row.map((n, i) => (
                   <li key={`${c}-${n.slug}`}>
-                    <Link href={`/navbars/${n.slug}`} className={styles.item} tabIndex={-1}>
+                    <Link href={`/navbars/${n.slug}`} className={styles.item} tabIndex={-1} prefetch={false}>
                       <Image
                         src={n.image}
                         alt=""
                         width={n.imageWidth}
                         height={n.imageHeight}
                         sizes="(max-width: 809px) 220px, 420px"
+                        quality={60}
                         priority={c === 0 && r === 0 && i < 3}
                       />
                     </Link>

@@ -74,6 +74,13 @@ The home hero ticker is built from the same list, so new entries appear there au
   text map of the directory for AI assistants (generated from the content at build time).
 - Category explainers live in `content/category-copy.json` (two paragraphs per style and type). Edit freely.
 
+## CDN and image budget
+
+- Screenshots are stored at 1920px max; photographic ones as JPEG (q82), flat UI ones as PNG. Keep new ones under ~300 KB.
+- `next.config.ts` pins the generated widths and qualities and caches optimised images for a year, so each size is
+  transformed once. Share cards use the optimiser's 1200px output rather than the raw file.
+- Links in the ticker, cards, footer and tag lists have `prefetch={false}`; they still prefetch on hover.
+
 ## Updating the About page stats
 
 The four figures on `/about` live in `content/stats.json`. Update `value`, `delta` and `updated` from the Databuddy

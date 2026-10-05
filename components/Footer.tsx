@@ -14,7 +14,7 @@ export default function Footer() {
               <div className={styles.list}>
                 {styleCats.map((s) => (
                   <p key={s.slug}>
-                    <Link href={`/style/${s.slug}`}>{s.title}</Link>
+                    <Link href={`/style/${s.slug}`} prefetch={false}>{s.title}</Link>
                   </p>
                 ))}
               </div>
@@ -24,7 +24,7 @@ export default function Footer() {
               <div className={styles.list}>
                 {typeCats.map((t) => (
                   <p key={t.slug}>
-                    <Link href={`/type/${t.slug}`}>{t.title}</Link>
+                    <Link href={`/type/${t.slug}`} prefetch={false}>{t.title}</Link>
                   </p>
                 ))}
               </div>
@@ -34,7 +34,7 @@ export default function Footer() {
               <div className={styles.list}>
                 {latest.map((n) => (
                   <p key={n.slug}>
-                    <Link href={`/navbars/${n.slug}`}>{n.title}</Link>
+                    <Link href={`/navbars/${n.slug}`} prefetch={false}>{n.title}</Link>
                   </p>
                 ))}
               </div>

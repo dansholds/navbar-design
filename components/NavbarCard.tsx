@@ -11,7 +11,7 @@ type Props = {
 
 export default function NavbarCard({ navbar, sizes, priority }: Props) {
   return (
-    <Link href={`/navbars/${navbar.slug}`} className={styles.card} aria-label={navbar.title}>
+    <Link href={`/navbars/${navbar.slug}`} className={styles.card} aria-label={navbar.title} prefetch={false}>
       <div className={styles.imageWrap}>
         <figure className={styles.figure}>
           <Image
@@ -20,6 +20,7 @@ export default function NavbarCard({ navbar, sizes, priority }: Props) {
             width={navbar.imageWidth}
             height={navbar.imageHeight}
             sizes={sizes ?? "(max-width: 809px) 50vw, (max-width: 1199px) 50vw, 33vw"}
+            quality={70}
             priority={priority}
           />
         </figure>
