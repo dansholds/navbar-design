@@ -1,9 +1,11 @@
 .hero {
   width: 100%;
+  min-height: 820px;
   display: flex;
   flex-direction: column;
+  justify-content: flex-end;
   align-items: center;
-  padding: 240px var(--pad-x) 24px;
+  padding: 120px var(--pad-x) 80px;
   position: relative;
   overflow: hidden;
 }
@@ -11,16 +13,60 @@
 .heroContainer {
   width: 100%;
   max-width: var(--container-max);
-  min-height: 180px;
   position: relative;
   z-index: 2;
+  display: flex;
+  flex-direction: row;
+  align-items: flex-end;
+  justify-content: space-between;
+  gap: 40px;
+}
+
+.heroText {
+  display: flex;
+  flex-direction: column;
+  gap: 32px;
+  max-width: 760px;
 }
 
 .heroTitle {
   font-family: var(--font-mono);
-  font-size: 36px;
-  line-height: 1.4;
+  font-size: 120px;
+  line-height: 1;
+  letter-spacing: -0.04em;
   color: var(--heading);
+}
+
+.heroLead {
+  font-size: 32px;
+  line-height: 1.2;
+  letter-spacing: -0.02em;
+  max-width: 640px;
+}
+
+.heroActions {
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  gap: 16px;
+}
+
+.heroStats {
+  font-family: var(--font-mono);
+  font-size: 14px;
+  line-height: 21px;
+  color: var(--text);
+  white-space: nowrap;
+  padding-bottom: 6px;
+}
+
+.heroFade {
+  position: absolute;
+  inset: auto 0 0 0;
+  height: 65%;
+  z-index: 1;
+  background: linear-gradient(to bottom, rgba(254, 254, 254, 0) 0%, rgba(254, 254, 254, 0.9) 45%, var(--bg) 100%);
+  pointer-events: none;
 }
 
 .section {
@@ -125,13 +171,42 @@
   }
 }
 
+@media (min-width: 810px) and (max-width: 1199.98px) {
+  .hero {
+    min-height: 720px;
+  }
+
+  .heroTitle {
+    font-size: 80px;
+  }
+}
+
 @media (max-width: 809.98px) {
   .hero {
-    padding: 80px 16px 0;
+    min-height: 0;
+    padding: 300px 16px 40px;
   }
 
   .heroContainer {
-    min-height: 164px;
+    flex-direction: column;
+    align-items: flex-start;
+    gap: 24px;
+  }
+
+  .heroText {
+    gap: 20px;
+  }
+
+  .heroTitle {
+    font-size: 48px;
+  }
+
+  .heroLead {
+    font-size: 20px;
+  }
+
+  .heroActions a {
+    flex: 1 1 auto;
   }
 
   .section {

@@ -5,7 +5,7 @@ import { ArrowUpRight } from "@/components/Icons";
 import NavbarGrid from "@/components/NavbarGrid";
 import Scramble from "@/components/Scramble";
 import Ticker from "@/components/Ticker";
-import { DEFAULT_DESCRIPTION, DEFAULT_TITLE, featuredNavbars, latestNavbars, types, OG_IMAGE } from "@/lib/content";
+import { DEFAULT_DESCRIPTION, DEFAULT_TITLE, featuredNavbars, latestNavbars, navbars, styles as styleCats, types, OG_IMAGE } from "@/lib/content";
 import styles from "./home.module.css";
 
 export const metadata: Metadata = {
@@ -17,6 +17,7 @@ export const metadata: Metadata = {
 };
 
 export default function HomePage() {
+  const styleCount = styleCats.length;
   const featured = featuredNavbars();
   const latest = latestNavbars(9);
 
@@ -24,8 +25,27 @@ export default function HomePage() {
     <>
       <section className={styles.hero}>
         <Ticker />
+        <div className={styles.heroFade} />
         <div className={styles.heroContainer}>
-          <Scramble as="h1" text="Navbar Design" className={styles.heroTitle} />
+          <div className={styles.heroText}>
+            <h1 className={styles.heroTitle}>Navbar Design</h1>
+            <p className={styles.heroLead}>
+              A hand-picked directory of the best website navigation bars on the internet.
+            </p>
+            <div className={styles.heroActions}>
+              <Button href="/navbars" variant="primary" size="large" arrow>
+                Browse navbars
+              </Button>
+              <Button href="/submit" variant="secondary" size="large">
+                Submit a navbar
+              </Button>
+            </div>
+          </div>
+          <Scramble
+            as="p"
+            className={styles.heroStats}
+            text={`${navbars.length} navbars · ${styleCount} styles · ${types.length} types`}
+          />
         </div>
       </section>
 

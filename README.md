@@ -63,4 +63,4 @@ Content is plain JSON, no CMS:
 Valid `styles` and `types` slugs (and their titles/descriptions) are in `content/categories.json`. Set
 `"featured": true` on the two entries that should appear in the home page "Featured" section.
 
-The home hero ticker images are listed in `content/home.json`.
+The home hero ticker is built from the same list, so new entries appear there automatically.

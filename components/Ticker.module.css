@@ -1,52 +1,51 @@
 .ticker {
+  --gap: 24px;
   position: absolute;
-  top: -310px;
-  left: -53px;
-  right: -267px;
+  top: -22%;
+  left: -14%;
+  right: -34%;
   z-index: 1;
   display: flex;
   flex-direction: column;
   align-items: center;
-  gap: 4px;
-  overflow: hidden;
+  gap: 24px;
   transform: rotate(20deg) skewX(-20deg) skewY(-10deg);
-  pointer-events: none;
-  -webkit-mask-image: linear-gradient(#000 0%, transparent 100%);
-  mask-image: linear-gradient(#000 0%, transparent 100%);
+  -webkit-mask-image: linear-gradient(#000 0%, rgba(0, 0, 0, 0.9) 45%, transparent 100%);
+  mask-image: linear-gradient(#000 0%, rgba(0, 0, 0, 0.9) 45%, transparent 100%);
 }
 
 .row {
   width: 100%;
-  overflow: hidden;
   display: flex;
-}
-
-.rowMid {
-  padding: 41px 0;
 }
 
 .track {
   display: flex;
   flex-direction: row;
+  gap: var(--gap);
   width: max-content;
   will-change: transform;
   animation-timing-function: linear;
   animation-iteration-count: infinite;
 }
 
-.gap4 {
-  gap: 4px;
-}
-
-.gap44 {
-  gap: 44px;
+.row:hover .track {
+  animation-play-state: paused;
 }
 
 .item {
   flex-shrink: 0;
-  width: 320px;
+  width: var(--tile, 420px);
   aspect-ratio: 16 / 9;
   overflow: hidden;
+  background: var(--muted-bg);
+  display: block;
+  transition: transform 0.35s var(--ease), box-shadow 0.35s var(--ease);
+}
+
+.item:hover {
+  transform: translateY(-8px);
+  box-shadow: 0 24px 48px rgba(0, 0, 0, 0.18);
 }
 
 .item img {
@@ -55,44 +54,34 @@
   object-fit: cover;
 }
 
-/* Row 1: 5 items x (320 + 4) = 1620px per copy, 16px/s to the right */
+/* Each row holds 9 tiles x (tile + 24px gap) per copy; two copies make the loop seamless. */
 .r1 {
-  animation-name: slideRight1;
-  animation-duration: 101s;
+  animation-name: slideRight;
+  animation-duration: var(--d1, 120s);
 }
 
-/* Rows 2 & 3: 5 items x (320 + 44) = 1820px per copy, 21px/s */
 .r2 {
-  animation-name: slideLeft2;
-  animation-duration: 87s;
+  animation-name: slideLeft;
+  animation-duration: var(--d2, 150s);
 }
 
 .r3 {
-  animation-name: slideRight2;
-  animation-duration: 87s;
+  animation-name: slideRight;
+  animation-duration: var(--d3, 135s);
 }
 
-@keyframes slideRight1 {
-  from {
-    transform: translateX(-1620px);
-  }
-  to {
-    transform: translateX(0);
-  }
-}
-
-@keyframes slideLeft2 {
+@keyframes slideLeft {
   from {
     transform: translateX(0);
   }
   to {
-    transform: translateX(-1820px);
+    transform: translateX(calc(-1 * var(--copy)));
   }
 }
 
-@keyframes slideRight2 {
+@keyframes slideRight {
   from {
-    transform: translateX(-1820px);
+    transform: translateX(calc(-1 * var(--copy)));
   }
   to {
     transform: translateX(0);
@@ -101,8 +90,11 @@
 
 @media (max-width: 809.98px) {
   .ticker {
-    top: -247px;
-    left: 17px;
-    right: -300px;
+    --tile: 220px;
+    --gap: 12px;
+    top: -14%;
+    left: -40%;
+    right: -60%;
+    gap: 12px;
   }
 }

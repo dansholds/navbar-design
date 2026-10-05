@@ -1,6 +1,5 @@
 import navbarsJson from "@/content/navbars.json";
 import categoriesJson from "@/content/categories.json";
-import homeJson from "@/content/home.json";
 
 export type Navbar = {
   slug: string;
@@ -32,7 +31,6 @@ export const DEFAULT_DESCRIPTION =
 export const navbars: Navbar[] = navbarsJson as Navbar[];
 export const styles: Category[] = categoriesJson.styles;
 export const types: Category[] = categoriesJson.types;
-export const tickerRows: string[][] = homeJson.tickerRows;
 
 export function getNavbar(slug: string): Navbar | undefined {
   return navbars.find((n) => n.slug === slug);
