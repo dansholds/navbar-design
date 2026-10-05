@@ -2,30 +2,10 @@
   "period": "Last 30 days",
   "updated": "2026-10-05",
   "items": [
-    {
-      "label": "Monthly visitors",
-      "value": 1300,
-      "format": "compact"
-    },
-    {
-      "label": "Monthly page views",
-      "value": 3300,
-      "format": "compact"
-    },
-    {
-      "label": "Monthly sessions",
-      "value": 1400,
-      "format": "compact"
-    },
-    {
-      "label": "Bounce rate",
-      "value": 39.5,
-      "format": "percent"
-    },
-    {
-      "label": "AI visitors",
-      "value": 16,
-      "format": "plain"
-    }
+    { "label": "Monthly visitors", "value": 1300, "format": "compact", "delta": "+233%" },
+    { "label": "Monthly page views", "value": 3300, "format": "compact", "delta": "+218%" },
+    { "label": "Monthly sessions", "value": 1400, "format": "compact", "delta": "+203%" },
+    { "label": "Bounce rate", "value": 39.5, "format": "percent", "delta": "+19%" },
+    { "label": "AI visitors", "value": 16, "format": "plain", "delta": "12 agent requests" }
   ]
 }

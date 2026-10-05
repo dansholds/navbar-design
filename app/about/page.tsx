@@ -1,7 +1,6 @@
 import type { Metadata } from "next";
-import Image from "next/image";
 import Button from "@/components/Button";
-import CountUp, { type StatFormat } from "@/components/CountUp";
+import StatsGrid from "@/components/StatsGrid";
 import stats from "@/content/stats.json";
 import { Code, Figma, PenTool } from "@/components/Icons";
 import { DEFAULT_DESCRIPTION, OG_IMAGE } from "@/lib/content";
@@ -17,7 +16,7 @@ export const metadata: Metadata = {
   twitter: { card: "summary_large_image", title: TITLE, description: DEFAULT_DESCRIPTION, images: [OG_IMAGE.url] },
 };
 
-const CONTACT = "mailto:dan@navbar.design";
+const CONTACT = "https://x.com/pizzaboy";
 
 export default function AboutPage() {
   return (
@@ -37,34 +36,14 @@ export default function AboutPage() {
                 Submit navbar
               </Button>
               <Button href={CONTACT} variant="secondary" size="large" arrow>
-                Contact us
+                Contact on X
               </Button>
             </div>
           </div>
         </div>
 
-        <div className={styles.illustration}>
-          <Image
-            src="/images/about-illustration.png"
-            alt="Illustration of the two people behind Navbar Design"
-            width={1920}
-            height={1080}
-            sizes="(max-width: 1199px) 100vw, 1360px"
-          />
-        </div>
 
-        <div className={styles.stats} aria-label={`Site statistics, ${stats.period.toLowerCase()}`}>
-          {stats.items.map((item) => (
-            <div key={item.label} className={styles.stat}>
-              <div className={styles.statText}>
-                <p className={styles.statValue}>
-                  <CountUp value={item.value} format={item.format as StatFormat} />
-                </p>
-                <p className={styles.statLabel}>{item.label}</p>
-              </div>
-            </div>
-          ))}
-        </div>
+        <StatsGrid period={stats.period} updated={stats.updated} items={stats.items} />
 
         <div className={styles.curated}>
           <div className={styles.curatedLeft}>
@@ -82,7 +61,7 @@ export default function AboutPage() {
             </div>
             <div>
               <Button href={CONTACT} variant="secondary" arrow>
-                Contact us
+                Contact on X
               </Button>
             </div>
           </div>
@@ -144,7 +123,7 @@ export default function AboutPage() {
             </p>
             <div className={styles.cta}>
               <Button href={CONTACT} variant="primary" arrow>
-                Contact us
+                Contact on X
               </Button>
             </div>
           </div>

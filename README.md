@@ -67,5 +67,5 @@ The home hero ticker is built from the same list, so new entries appear there au
 
 ## Updating the About page stats
 
-The four figures on `/about` live in `content/stats.json`. Update `value` (and `updated`) from the Databuddy 30-day
-view whenever you like; `format` is `compact` (1300 renders as 1.3K), `percent` or `plain`.
+The four figures on `/about` live in `content/stats.json`. Update `value`, `delta` and `updated` from the Databuddy
+30-day view whenever you like; `format` is `compact` (1300 renders as 1.3K), `percent` or `plain`.
