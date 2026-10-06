@@ -1,5 +1,41 @@
 [
   {
+    "slug": "studio-ping-pong",
+    "title": "Studio Ping Pong",
+    "description": "Studio Ping Pong hide their whole navigation behind a single paddle icon in the corner. Tap it and the page flips to a cream full-screen menu with four giant condensed links, each with its own little italic tagline. Big type, no clutter, lots of personality.",
+    "website": "https://studiopingpong.com?ref=navbar.design",
+    "styles": [
+      "typographic",
+      "minimalism"
+    ],
+    "types": [
+      "full-screen",
+      "sticky"
+    ],
+    "image": "/images/navbars/studio-ping-pong.png",
+    "imageWidth": 1920,
+    "imageHeight": 1080,
+    "featured": false
+  },
+  {
+    "slug": "the-design-society",
+    "title": "The Design Society",
+    "description": "The Design Society is a community of designers in Lyon, and their navbar is a tiny floating window with a hamburger. Click it and it unfolds into a full retro OS dialog, complete with a pixel-art eye and scanlines. Lo-fi, playful and completely on brand.",
+    "website": "https://www.thedesignsociety.fr?ref=navbar.design",
+    "styles": [
+      "retro",
+      "illustrated"
+    ],
+    "types": [
+      "dropdown",
+      "sticky"
+    ],
+    "image": "/images/navbars/the-design-society.jpg",
+    "imageWidth": 1920,
+    "imageHeight": 1080,
+    "featured": false
+  },
+  {
     "slug": "letude",
     "title": "L'Étude",
     "description": "L'Étude ditches the usual top bar for a vertical navbar centred down the middle of the page, doubling as both navigation and a work filter. Unique, minimal and very confident.",
